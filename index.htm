@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .texto{
+            background-color: tomato;
+            color: aliceblue;
+            font-size: 30px;
+        }
+    </style>
+
+    <h1 class="texto">Aula de JS</h1>
+    <p class="texto" id="textoPersonalizado">Aqui vai meu texto personalizado</p>
+    <script>
+        console.log('Aqui eu tenho o Texto')
+
+
+        // + Adição
+        // - Subtração
+        // / Divisão
+        // * Multiplicação
+
+        variavel = 1
+
+        texto = 'texto' // Variável inteligente de texo
+        numeroquebrado = 6.5 // Variável inteligente de numero quebrado
+        verdadeirofalso = false // Variável inteligente de verdadeiro e fácil
+        console.log(variavel, numeroquebrado, verdadeirofalso) // Mostrar os valores no log do navegador que foi declarado aqui
+        console.log(8 + parseInt('2')) // Conversao de string para número
+        console.log(variavel + 7) // Cálculo da variável + 7
+        // Operadores lógicos
+        // == Igual 
+        // != Diferente
+        // > Maior
+        // < Menor
+        // >=Maior ou igual
+        // <=Menor ou igual
+         console.log(1 == '1') // Ele olhará se o número é realmente igual e vai mostrar se é verdadeiro ou falso
+         console.log(1 !== '1') // Comparação para ver se é diferente
+
+        if(1 == 1){
+            console.log('estamos dentro do IF') 
+        }
+        else if(2 == 2){
+            console.log('estou dentro do ELSE IF')
+        }
+        else{
+            console.log('estou dentro do ELSE')
+        
+        }
+        for(i = 0; i < 5; i++){
+            console.log('valor de i: ' + i)
+        }
+        contador = 0
+        while(contador < 10)
+        {
+            console.log('valor de contador: ' + contador)
+            if(contador == 7){
+                continue
+            }
+
+            if(contador == 5){
+                break
+            }
+            contador++
+        }
+
+        alert('Deseja continuar') // Cria um popup para confirmar com Ok
+
+        function funcaotop(){
+            alert('esta funcionando') // Aqui é uma função que cria um alerta na página
+        }
+        function adicionartexto(){ // Aqui foi criado uma função adicionar texto
+            alert('Deseja adicionar um texto?')
+            console.log(document.getElementById('textoPersonalizado').innerHTML)
+            document.getElementById(textoPersonalizado)
+            
+        }
+        console.error('') // Mostra um erro
+        
+    </script>
+    
+</body>
+</html>
